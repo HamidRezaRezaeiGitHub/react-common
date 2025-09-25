@@ -15,22 +15,17 @@ A reusable collection of React components, utilities, services, and configuratio
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── Button.tsx      # Custom button component
-│   └── index.ts        # Component exports
-├── hooks/              # Custom React hooks
-│   └── index.ts        # useLocalStorage, useDebounce, useMediaQuery
-├── lib/                # Library utilities
-│   └── utils.ts        # Shadcn/ui utilities (cn function)
-├── services/           # API and external services
-│   └── api.ts          # Base API service class
-├── types/              # TypeScript type definitions
-│   └── index.ts        # Common types and interfaces
-├── utils/              # General utility functions
-│   └── common.ts       # Date formatting, text utils, etc.
-├── App.tsx             # Main application component
-├── main.tsx            # Application entry point
-└── globals.css         # Global styles with Tailwind
+├── components/         # Reusable UI components
+├── pages/             # Page components and layouts
+├── test/              # Test files and test utilities
+│   └── setupTests.ts  # Jest test setup
+├── contexts/          # React context providers
+├── services/          # API and external services
+├── utils/             # General utility functions
+│   └── utils.ts       # Shadcn/ui utilities (cn function)
+├── main.tsx           # Application entry point
+├── globals.css        # Global styles with Tailwind
+└── vite-env.d.ts      # Vite environment types
 ```
 
 ## 🛠️ Getting Started
@@ -74,27 +69,21 @@ npm run lint
 
 ## 📦 What's Included
 
-### Components
-- **Button** - Customizable button with variants, sizes, and loading states
+This repository provides a clean, organized structure ready for your common React components and utilities:
 
-### Hooks
-- **useLocalStorage** - Persist state in localStorage
-- **useDebounce** - Debounce values to improve performance
-- **useMediaQuery** - React to media query changes
+### Folder Structure
+- **components/** - Empty, ready for your reusable UI components
+- **pages/** - Contains the main App.tsx page component
+- **test/** - Contains test files and Jest setup configuration
+- **contexts/** - Empty, ready for React context providers
+- **services/** - Empty, ready for API and external services
+- **utils/** - Contains Shadcn/ui utility functions (cn function)
 
-### Services
-- **ApiService** - Base class for HTTP requests with error handling
-
-### Utilities
-- **formatDate** - Format dates for display
-- **truncateText** - Truncate long text with ellipsis
-- **capitalize** - Capitalize strings
-- **generateId** - Generate random IDs
-- **debounce** - Debounce function calls
-- **isEmpty** - Check if values are empty
-
-### Types
-- Common TypeScript interfaces and types for forms, API responses, users, etc.
+### Ready-to-Use
+- **Hello World App** - A working React application with Tailwind CSS
+- **Shadcn/ui Integration** - Complete setup with utility functions
+- **Testing Environment** - Jest + React Testing Library configured and working
+- **TypeScript Configuration** - Strict TypeScript setup with path aliases
 
 ## 🎨 Tailwind Configuration
 
@@ -136,8 +125,4 @@ To use this common library in other projects:
 This is a personal collection, but feel free to:
 - Suggest improvements
 - Report issues
-- Submit pull requests
-
-## 📄 License
-
-MIT License - feel free to use in your projects.
+- Submit pull requestsØ
